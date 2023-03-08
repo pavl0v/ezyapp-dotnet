@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ezyapp.Api", "ezyapp.api\Ezyapp.Api.csproj", "{F260724A-021B-491E-8BF6-8CA78A418AC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ezyapp.Domain", "Ezyapp.Domain\Ezyapp.Domain.csproj", "{D6FFF095-0C11-4FAA-AE5D-3CF1CF37CE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ezyapp.Data", "Ezyapp.Data\Ezyapp.Data.csproj", "{5B5421F0-679C-4840-85CD-09506A1323BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{F260724A-021B-491E-8BF6-8CA78A418AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F260724A-021B-491E-8BF6-8CA78A418AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F260724A-021B-491E-8BF6-8CA78A418AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FFF095-0C11-4FAA-AE5D-3CF1CF37CE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FFF095-0C11-4FAA-AE5D-3CF1CF37CE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FFF095-0C11-4FAA-AE5D-3CF1CF37CE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FFF095-0C11-4FAA-AE5D-3CF1CF37CE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5421F0-679C-4840-85CD-09506A1323BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5421F0-679C-4840-85CD-09506A1323BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5421F0-679C-4840-85CD-09506A1323BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5421F0-679C-4840-85CD-09506A1323BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
