@@ -6,8 +6,8 @@ using Ezyapp.Domain.Hotels.Models;
 
 namespace Ezyapp.Domain.Hotels.Repository
 {
-    public interface IGetAllHotels
+    public interface IGetAllHotelsQuery
     {
-        IEnumerable<Hotel> GetAllHotels();
+        Task<IEnumerable<Hotel>> GetAllHotelsAsync();
     }
 }

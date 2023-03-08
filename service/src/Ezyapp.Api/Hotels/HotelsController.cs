@@ -16,9 +16,9 @@ public class HotelsController : ControllerBase
     }
 
     [HttpGet("all")]
-    public HotelsResponse GetAllHotels()
+    public async Task<HotelsResponse> GetAllHotelsAsync()
     {
-        var hotels = _hotelsService.GetAllHotels();
+        var hotels = await _hotelsService.GetAllHotelsAsync();
         return new HotelsResponse 
         {
             Payload = hotels.Select(x => new Hotel { Id = x.Id, Name = x.Name }).ToArray()

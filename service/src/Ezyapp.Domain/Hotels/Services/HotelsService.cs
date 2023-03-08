@@ -9,16 +9,16 @@ namespace Ezyapp.Domain.Hotels.Services
 {
     public class HotelsService
     {
-        private readonly IGetAllHotels _repository;
+        private readonly IGetAllHotelsQuery _repository;
 
-        public HotelsService(IGetAllHotels repository)
+        public HotelsService(IGetAllHotelsQuery repository)
         {
             _repository = repository;
         }
 
-        public IEnumerable<Hotel> GetAllHotels()
+        public Task<IEnumerable<Hotel>> GetAllHotelsAsync()
         {
-            return _repository.GetAllHotels();
+            return _repository.GetAllHotelsAsync();
         }
     }
 }
