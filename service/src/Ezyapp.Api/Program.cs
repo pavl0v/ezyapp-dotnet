@@ -7,8 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ApplicationDbContext>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IGetAllHotelsQuery, GetAllHotelsQuery>();
+builder.Services.AddScoped<ICreateHotelQuery, CreateHotelQuery>();
+builder.Services.AddScoped<ICreateHotelRawQuery, CreateHotelRawQuery>();
 builder.Services.AddScoped<HotelsService>();
+builder.Services.AddScoped<CreateHotelService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
